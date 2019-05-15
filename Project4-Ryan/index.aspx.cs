@@ -26,23 +26,27 @@ namespace Project4_Ryan
                     if (bmi <= 18.5)
                     {
                         //Display the /Images/Underweight.png
+                        bmiImage.ImageUrl = "~/Images/Underweight.png";
                         //Display the ansLabel
                         ansLabel.Text = bmi.ToString();
                     } else if (bmi > 18.5 && bmi <= 24.9)
                     {
                         //Display the /Images/healthy.png
+                        bmiImage.ImageUrl = "~/Images/healthy.png";
                         //Display the ansLabel
                         ansLabel.Text = bmi.ToString();
                     }
                     else if (bmi >= 25.0 && bmi >= 29.9)
                     {
                         //Display the /Images/overweight.png
+                        bmiImage.ImageUrl = "~/Images/overweight.png";
                         //Display the ansLabel
                         ansLabel.Text = bmi.ToString();
                     }
                     else if (bmi >= 30.0)
                     {
                         //Display the /Images/obese.png
+                        bmiImage.ImageUrl = "~/Images/obese.png";
                         //Display the ansLabel
                         ansLabel.Text = bmi.ToString();
                     }

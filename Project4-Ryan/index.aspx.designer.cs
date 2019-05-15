@@ -31,6 +31,15 @@ namespace Project4_Ryan {
         protected global::System.Web.UI.WebControls.DropDownList ftList;
         
         /// <summary>
+        /// bmiImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image bmiImage;
+        
+        /// <summary>
         /// inList control.
         /// </summary>
         /// <remarks>

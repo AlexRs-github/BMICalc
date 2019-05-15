@@ -6,6 +6,15 @@
 <head runat="server">
     <link rel="stylesheet" href="style/style.css" />
     <title>Body Mass Index</title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 24px;
+        }
+        .auto-style2 {
+            width: 127px;
+            height: 381px;
+        }
+    </style>
 </head>
     <body>
         <h1>BMI Calculator</h1>
@@ -29,7 +38,7 @@
                                 </asp:DropDownList>
                             </td>
                             <td>
-                                <img id="bmiImage" src="C:\Users\Alex\Desktop\C# Projects\Project4-Ryan\Images\unknown.png" />
+                                <asp:Image id="bmiImage" runat="server" ImageUrl="~/Images/unknown.png"/>
                             </td>
                         </tr>
                         <tr>
