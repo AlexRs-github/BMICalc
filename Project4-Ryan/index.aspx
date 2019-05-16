@@ -8,11 +8,14 @@
     <title>Body Mass Index</title>
     <style type="text/css">
         .auto-style1 {
-            width: 24px;
+            height: 40px;
         }
         .auto-style2 {
-            width: 127px;
-            height: 381px;
+            width: 350px;
+        }
+        .auto-style3 {
+            height: 40px;
+            width: 350px;
         }
     </style>
 </head>
@@ -25,7 +28,7 @@
                             <td>
                                 Height in Feet:
                             </td>
-                            <td id="bmiInfo">
+                            <td id="bmiInfo" class="auto-style2">
                                 <asp:DropDownList id="ftList" AutoPostBack="True" runat="server">
                                     <asp:ListItem Selected="True" Value="1"> 1 </asp:ListItem>
                                     <asp:ListItem Value="2"> 2 </asp:ListItem>
@@ -45,7 +48,7 @@
                             <td>
                                 Height in Inches:
                             </td>
-                            <td>
+                            <td class="auto-style2">
                                 <asp:DropDownList id="inList" AutoPostBack="True" runat="server">
                                     <asp:ListItem Selected="True" Value="0"> 0 </asp:ListItem>
                                     <asp:ListItem Value="1"> 1 </asp:ListItem>
@@ -67,31 +70,31 @@
                             <td>
                                 Weight
                             </td>
-                            <td>
-                                <asp:TextBox id="txtBox" Columns="2" MaxLength="3" runat="server"/> 
+                            <td class="auto-style2">
+                                <asp:TextBox id="txtBox" Columns="2" MaxLength="3" runat="server" Width="105px"/> 
                             </td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>
+                            <td class="auto-style1"></td>
+                            <td class="auto-style3">
                                 <asp:Label id="errLabel1" runat="server" EnableViewState="False"></asp:Label>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>
+                            <td class="auto-style2">
                                 <asp:Label id="errLabel2" runat="server" EnableViewState="False"></asp:Label>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>
+                            <td class="auto-style2">
                                 <asp:Button id="submitBtn" runat="server" OnClick="submitBtn_Click" Text="Calculate BMI"/> 
                             </td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>
+                            <td class="auto-style2">
                                 <asp:Label id="ansLabel" runat="server" EnableViewState="False"></asp:Label>
                             </td>
                         </tr>

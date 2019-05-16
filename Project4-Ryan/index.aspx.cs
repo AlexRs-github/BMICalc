@@ -51,7 +51,7 @@ namespace Project4_Ryan
                         ansLabel.Text = bmi.ToString();
                     }
                 //Incorrect weight
-                } else if (weight < 0 && weight > 1000){
+                } else if (weight < 0 || weight > 1000){
                     //Display the errLabel2
                     errLabel2.Text = "Value must be between 1 and 1000";
                 //Weight was not entered
