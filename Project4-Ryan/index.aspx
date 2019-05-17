@@ -6,18 +6,6 @@
 <head runat="server">
     <link rel="stylesheet" href="style/style.css" />
     <title>Body Mass Index</title>
-    <style type="text/css">
-        .auto-style1 {
-            height: 40px;
-        }
-        .auto-style2 {
-            width: 350px;
-        }
-        .auto-style3 {
-            height: 40px;
-            width: 350px;
-        }
-    </style>
 </head>
     <body>
         <h1>BMI Calculator</h1>
@@ -71,19 +59,19 @@
                                 Weight
                             </td>
                             <td class="auto-style2">
-                                <asp:TextBox id="txtBox" Columns="2" MaxLength="3" runat="server" Width="105px"/> 
+                                <asp:TextBox id="txtBox" MaxLength="3" runat="server" Width="105px"/> 
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style1"></td>
                             <td class="auto-style3">
-                                <asp:Label id="errLabel1" runat="server" EnableViewState="False"></asp:Label>
+                                <asp:Label id="errLabel1" Text="" runat="server" EnableViewState="False"></asp:Label>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td class="auto-style2">
-                                <asp:Label id="errLabel2" runat="server" EnableViewState="False"></asp:Label>
+                                <asp:Label id="errLabel2" Text="" runat="server" EnableViewState="False"></asp:Label>
                             </td>
                         </tr>
                         <tr>
@@ -95,7 +83,7 @@
                         <tr>
                             <td></td>
                             <td class="auto-style2">
-                                <asp:Label id="ansLabel" runat="server" EnableViewState="False"></asp:Label>
+                                <asp:Label id="ansLabel" Text="" runat="server" EnableViewState="False"></asp:Label>
                             </td>
                         </tr>
                     </table>

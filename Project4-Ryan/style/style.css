@@ -1,3 +1,15 @@
 ﻿#bmiImage {
 float:right
 }
+.auto-style1 {
+    height: 40px;
+}
+
+.auto-style2 {
+    width: 350px;
+}
+
+.auto-style3 {
+    height: 40px;
+    width: 350px;
+}
